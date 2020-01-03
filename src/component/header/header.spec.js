@@ -4,14 +4,12 @@ import { findByTestAtrr } from '../../Utils';
 import Header from './index';
 
 const setUp = (props={})=>{
-    const wrapper = shallow(<Header {...props}/>);
-    console.log(wrapper.debug());
+    const wrapper = shallow(<Header {...props}/>)
     return wrapper;
 }
 describe('Header component',()=>{
     let component;
     beforeEach(()=>{
-        console.log('before');
         component=setUp();
     });
     it('should render wihtout erros',()=>{
